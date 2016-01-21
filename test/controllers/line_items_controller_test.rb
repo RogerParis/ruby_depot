@@ -33,6 +33,7 @@ class LineItemsControllerTest < ActionController::TestCase
       assert_select 'tr#current_item td', /Programming Ruby 1.9/
     end
   end
+
   test "should show line_item" do
     get :show, id: @line_item
     assert_response :success
